@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Bussniss</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+        /*part1*/
+        .imgnav{
+            position: relative;
+            width: 100%;
+            height: 671px;
+        }
+        .nav{
+            position: absolute;
+            top: 0px;
+            left: 30%;
+        }
+        .navbarpad{
+            padding-right: 352px;
+        }
+        .navcolor{
+            background-color: rgba(6, 44, 25, 0.301) !important;
+            
+        }
+        .landscapingtext{
+            position: absolute;
+            left: 43%;
+            top: 143px;
+            text-align: center;
+            color: white;
+        }
+        .landscapingtextcolor{
+            background-color: #fff0;
+            width: 28rem;
+        }
+        .landscapingtextsize{
+            font-size: 50px;
+            position: relative;
+            width: 100%;
+        }
+        .btnlandscape{
+            background-color:#7cbb5b ;
+            border-color:#7cbb5b ;
+        }
+        /*part2*/
+        .p2textposition{
+            position: relative;
+            display: inline-block;
+            top: 43px;
+            left: 17%;
+        }
+        .p2textpositiondecoratin{
+            border: none;
+        }
+        .singletextcolor{
+            color: green;
+            display: inline;
+        }
+        .p2picposition{
+            position: relative;
+            display: inline-block;
+            top: 74px;
+            left: 25%;
+        }
+        .p2picposition1{
+            padding-left: 228px;
+            position: absolute;
+            bottom: -240px;
+            
+        }
+        .p2picposition2{
+            position: absolute;
+            bottom: -240px;
+        }
+        /*part3*/
+        .p3{
+            background-color: #6aaf08;
+            height: 386px;
+            position: relative;
+            top: 84px;
+            
+        }
+        .p3pic1{
+            position: relative;
+            display: inline-block;
+            top: 83px;
+            left: 24%;
+        }
+        .p3pic2{
+            position: relative;
+            display: inline-block;
+            top: 83px;
+            left: 25%;
+        }
+        .p3pic3{
+            position: relative;
+            display: inline-block;
+            top: 83px;
+            left: 26%;
+        }
+        .p3pic4{
+            position: relative;
+            display: inline-block;
+            top: 83px;
+            left: 27%;
+        }
+        /*part4*/
+        .p4{
+            text-align: center;
+            position: relative;
+            top: 150px;
+        }
+        .ptextdecor{
+            color: green;
+            font-size: 50px;
+            position: relative;
+            bottom: 50px;
+        }
+        .ptextdecor1{
+            position: relative;
+            bottom: 50px;
+        }
+        .imgpad1{
+            position: absolute;
+            padding-bottom: 10px;
+            display: inline-block;
+            left: 30%;
+        }
+        .imgpad2{
+            position: absolute;
+            padding-bottom: 10px;
+            display: inline-block;
+            left: 43.5%;
+        }
+        .imgpad3{
+            position: absolute;
+            padding-bottom: 10px;
+            display: inline-block;
+            left: 57%;
+        }
+        .imgpad4{
+            position: absolute;
+            padding-bottom: 10px;
+            display: inline-block;
+            left: 30%;
+        }
+        .imgpad5{
+            position: absolute;
+            padding-bottom: 10px;
+            display: inline-block;
+            left: 43.5%;
+        }
+        .imgpad6{
+            position: absolute;
+            padding-bottom: 10px;
+            display: inline-block;
+            left: 57%;
+        }
+        .imgpad7{
+            position: absolute;
+            padding-bottom: 10px;
+            display: inline-block;
+            left: 30%;
+            padding-bottom: 60px;
+        }
+        .imgpad8{
+            position: absolute;
+            padding-bottom: 10px;
+            display: inline-block;
+            left: 43.5%;
+            padding-bottom: 60px;
+        }
+        .imgpad9{
+            position: absolute;
+            padding-bottom: 10px;
+            display: inline-block;
+            left: 57%;
+            padding-bottom: 60px;
+        }
+        /*part5*/
+        .p5{
+            background-color: #69af087c;
+            height: 569px;
+            position: relative;
+            top: 410px;
+        }
+        .picp5{
+            position: relative;
+            width: 100%;
+            height: 569px;
+            z-index: -1;
+        }
+        /*part6*/
+        .p6{
+            text-align: center;
+            position: relative;
+            top: 460px;
+        }
+        .movegrid{
+            position: relative;
+            top: 394px;
+            z-index: 1;
+            left: 87px;
+        }
+        .movecontact{
+            position: relative;
+            top: 360px;
+            width: 250px;
+            text-align: center;
+            display: inline-block;
+        }
+        .contactposition1{ 
+            position: relative;
+            left: 605px;
+            top: -8px;
+
+        }
+        .contactposition2{ 
+            position: relative;
+            left: 806px;
+            top: -68px;
+
+        }
+        .contactposition3{ 
+            position: relative;
+            left: 841px;
+            top: -116px;
+
+        }
+        .contactposition4{ 
+            position: relative;
+            left: 700px;
+            top: 16px;
+
+        }
+        .movetextarea{
+            height: 179px;
+            width: 760px;
+            left: -410px;
+            position: absolute;
+            top: 84px;
+        }
+        .sie1{
+            position: relative;
+            right: 141px;
+            top: 52px;
+        }
+        .btn6{
+            position: relative;
+            top: 231px;
+            left: -140px;
+        }
+        /*part 7*/
+        .footer{
+            background-color: #333333;
+            height: 100px;
+            position: relative;
+            top: 495px;
+        }
+        .icon1{
+            position: absolute;
+            left: 51%;
+            top: 30px;
+            z-index: 2;
+            background-color: yellowgreen;
+        }
+        .icon2{
+            position: absolute;
+            left: 49%;
+            top: 30px;
+            z-index: 2;
+            background-color: yellowgreen;
+        }
+        .icon3{
+            position: absolute;
+            left: 53%;
+            top: 30px;
+            z-index: 2;
+            background-color: yellowgreen;
+        }
+        .ctext{
+            position: absolute;
+            left: 46%;
+            top: 69px;
+            z-index: 2;
+            font-size: 10px;
+        }
+        @media (max-width:600px) { /* hi-res laptops and desktops */ 
+        
+        body{
+            width: 129%;
+            position: relative;
+            left: 160px;
+        }
+        .navbarpad {
+            padding-right: 372px;
+        }
+        .cbpos{
+            position: relative;
+            left: -19px;
+            text-align: center;
+        }
+        .p2picposition2{
+            bottom: -510px;
+            left: -278px;
+        }
+        .p2picposition1{
+            bottom: -855px;
+            right: 72px;
+        }
+        .p3pic2{
+            left: 27%;
+        }
+        .p3pic4{
+            top: 71px;
+            left: 24%;
+        }
+        .p3pic3{
+            top: 303px;
+            left: -2%;
+        }
+        .p4{
+            left: 13px;
+            text-align: center;
+        }
+        .side1{
+            position: absolute;
+            left: -106px;
+        }
+        .side2{
+            position: absolute;
+            left: 115px;
+        }
+        .p5{
+            top: 1080px;
+        }
+        .pp5{
+            top: 710px;
+        }
+        .ppp5{
+            position: relative;
+            left: -80px;
+        }
+        .p6{
+            top: 1100px;
+        }
+        .ptextdecor{
+            bottom: 50px;
+            left: 7px;
+        }
+        .ptextdecor1{
+            bottom: 50px;
+            left: 60px;
+        }
+        .cu11{
+            position: relative;
+            top: 750px;
+            left: -88px;
+        }
+        .cu22{
+            position: relative;
+            top: 749px;
+            left: -85px;
+        }
+        .cu33{
+            position: relative;
+            top: 747px;
+            left: -73px;
+        }
+        .contactposition4 {
+            left: 260px;
+            top: 906px;
+        }
+        .contactposition2 {
+            left: 386px;
+            top: 912px;
+        }
+        .contactposition1 {
+            left: 145px;
+            top: 971px;
+        }
+        .sie1 {
+            position: relative;
+            right: 591px;
+            top: 1042px;
+        }
+        .movetextarea {
+            height: 170px;
+            width: 540px;
+            left: -729px;
+            top: 1074px;
+        }
+        .btn6 {
+            position: relative;
+            top: 1211px;
+            left: -570px;
+        }
+        .footer {
+            top: 1581px;
+        }
+        .p3{
+            height: 576px;
+            top: 694px;
+        }
+        .p4{
+            text-align: center;
+            top: 770px;
+
+        }
+        .bbb2{
+            text-align: center;
+        }
+        .soz4{
+            position: relative;
+            left: 160px;
+        }
+        .navpos69{
+            width: 420px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="imgnav">
+        <img class="imgnav" src="intro-bg.jpg" alt="">
+    </div>
+    <div class="nav">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light navcolor navpos69">
+                    <a class="navbar-brand navbarpad" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+        
+    </div>
+    <div class="landscapingtext">
+            <div class="card landscapingtextcolor p2textpositiondecoratin" style="width: 18rem;">
+                    <div class="card-body cbpos">
+                      <h5 class="card-title landscapingtextsize">Special title treatment</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <a href="#" class="btn btn-primary btnlandscape">Go somewhere</a>
+                    </div>
+                  </div>
+    </div>
+    <div class="container p2">
+    <div class="p2textposition">
+            <div class="card p2textpositiondecoratin" style="width: 18rem;">
+                    <div class="card-body bbb2">
+                      <h5 class="card-title">Special title <p class="singletextcolor">treatment</p></h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.With supporting text below as a natural lead-in to additional content.With supporting text below as a natural lead-in to additional content.</p>
+                      <a href="#" class="btn btn-primary btnlandscape">Go somewhere</a>
+                    </div>
+                  </div>
+    </div>
+    <div class="p2picposition">
+        <div class="p2picposition2">
+        <img height="200" width="200" src="about-1.jpg" alt="">
+        <p>With supporting text below<Br> as a natural lead-in to additional <Br>content.</p>
+        </div>
+        <div class="p2picposition1">
+        <img height="200" width="200" src="about-2.jpg" alt="">
+        <p>With supporting text below<Br> as a natural lead-in to additional <Br>content.</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="p3">
+            <div class="p3pic1">
+                <img style="border-radius: 100%;" height="150" width="150" src="about-2.jpg" alt="">
+                <p>With supporting text below<Br> as a natural lead-in to additional <Br>content.</p>
+            </div>
+            <div class="p3pic2">
+                <img style="border-radius: 100%;" height="150" width="150" src="06-small.jpg" alt="">
+                <p>With supporting text below<Br> as a natural lead-in to additional <Br>content.</p>
+            </div>
+            <div class="p3pic3">
+                <img style="border-radius: 100%;" height="150" width="150" src="10-small.jpg" alt="">
+                <p>With supporting text below<Br> as a natural lead-in to additional <Br>content.</p>
+            </div>
+            <div class="p3pic4">
+                <img style="border-radius: 100%;" height="150" width="150" src="12-small.jpg" alt="">
+                <p>With supporting text below<Br> as a natural lead-in to additional <Br>content.</p>
+            </div>
+    </div>
+
+    <div class="p4">
+        <h1>Project Gallery</h1>
+        <p class="ptextdecor">_______</p>
+        <p class="ptextdecor1">With supporting text below as a natural lead-in to additional content.</p>
+        <button type="button" class="btn btn-primary btnlandscape">button</button>
+        <button type="button" class="btn btn-primary btnlandscape">button</button>
+        <button type="button" class="btn btn-primary btnlandscape">button</button>
+        <button type="button" class="btn btn-primary btnlandscape">button</button>
+        <div class="soz4">
+            <br>
+            <div class="imgpad1 side1">
+            <img height="200" width="200" src="01-small.jpg" alt="">
+            </div>
+            <div class="imgpad2">
+            <img height="200" width="200" src="02-small.jpg" alt="">
+            </div>
+            <div class="imgpad3 side2">
+            <img height="200" width="200" src="03-small.jpg" alt="">
+            </div>
+            <br><br><br><br><br><br><br><br><br>
+            <div class="imgpad4 side1">
+            <img height="200" width="200" src="04-small.jpg" alt="">
+            </div>
+            <div class="imgpad5">
+            <img height="200" width="200" src="05-small.jpg" alt="">
+            </div>
+            <div class="imgpad6 side2">
+            <img height="200" width="200" src="06-small.jpg" alt="">
+            </div>
+            <br><br><br><br><br><br><br><br><br>
+            <div class="imgpad7 side1">
+            <img height="200" width="200" src="07-small.jpg" alt="">
+            </div>
+            <div class="imgpad8">
+            <img height="200" width="200" src="08-small.jpg" alt="">
+            </div>
+            <div class="imgpad9 side2">
+            <img height="200" width="200" src="09-small.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="p5">
+        <div class="pp5">
+                <img height="200" width="200" class="picp5" src="12-large.jpg" alt="">
+            </div>
+
+            <div class="landscapingtext">
+                    <div class="card landscapingtextcolor p2textpositiondecoratin ppp5" style="width: 18rem;">
+                            <div class="card-body">
+                              <h6 class="card-title landscapingtextsize">Special title treatment</h6>
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                              <a href="#" class="btn btn-primary btnlandscape">Go somewhere</a>
+                            </div>
+                          </div>
+            </div>
+
+    </div>
+
+
+    <div class="p6">
+            <h1>Contact us</h1>
+            <p class="ptextdecor">_______</p>
+            <p class="ptextdecor1">With supporting text below as a natural lead-in to additional content.</p>
+    
+    </div>
+
+    <div class="container movegrid">
+            <div class="row">
+              <div class="col-sm cu11">
+                    <h1>Contact us</h1>
+                    <p class="ptextdecor">_______</p>
+                    <p class="ptextdecor1">With supporting text below as a natural lead-in to additional content.</p>
+              </div>
+              <div class="col-sm cu22">
+                    <h1>Contact us</h1>
+                    <p class="ptextdecor">_______</p>
+                    <p class="ptextdecor1">With supporting text below as a natural lead-in to additional content.</p>
+              </div>
+              <div class="col-sm cu33">
+                    <h1>Contact us</h1>
+                    <p class="ptextdecor">_______</p>
+                    <p class="ptextdecor1">With supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+    </div>
+    
+    <div class="container movecontact">
+            <div style="text-align:center">
+                <div class="contactposition4">
+              <h2>Contact Us</h2>
+              <p>Swing by for a cup of coffee, or leave us a message:</p>
+                </div>
+            </div>
+            <div style=>
+              <div>
+                <form>
+                    <div class="contactposition1">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    </div>  
+                    <div class="contactposition2">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    </div>
+                    <div class="contactposition3">
+                        <label for="subject" class="sie1">Subject</label><Br>
+                        <textarea class="movetextarea" id="subject" name="subject" placeholder="Write something.." style="height:170px "></textarea><br>
+                        <button type="button" class="btn btn-primary btnlandscape btn6">Submit</button>
+                    </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <footer class="footer">
+            <i class="fab fa-facebook icon1"></i>
+            <i class="fab fa-twitter-square icon2"></i>
+            <i class="fab fa-google-plus icon3"></i>
+            <p class="ctext" >☻ 2016 Landscaper.Designed by Templatewire</p>
+
+          </footer>
+              
+</body>
+</html>
